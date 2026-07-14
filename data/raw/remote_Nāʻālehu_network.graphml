@@ -1,0 +1,1180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d16" for="edge" attr.name="bridge" attr.type="string" />
+  <key id="d15" for="edge" attr.name="ref" attr.type="string" />
+  <key id="d14" for="edge" attr.name="lanes" attr.type="string" />
+  <key id="d13" for="edge" attr.name="geometry" attr.type="string" />
+  <key id="d12" for="edge" attr.name="length" attr.type="string" />
+  <key id="d11" for="edge" attr.name="reversed" attr.type="string" />
+  <key id="d10" for="edge" attr.name="oneway" attr.type="string" />
+  <key id="d9" for="edge" attr.name="name" attr.type="string" />
+  <key id="d8" for="edge" attr.name="highway" attr.type="string" />
+  <key id="d7" for="edge" attr.name="osmid" attr.type="string" />
+  <key id="d6" for="node" attr.name="street_count" attr.type="string" />
+  <key id="d5" for="node" attr.name="x" attr.type="string" />
+  <key id="d4" for="node" attr.name="y" attr.type="string" />
+  <key id="d3" for="graph" attr.name="simplified" attr.type="string" />
+  <key id="d2" for="graph" attr.name="crs" attr.type="string" />
+  <key id="d1" for="graph" attr.name="created_with" attr.type="string" />
+  <key id="d0" for="graph" attr.name="created_date" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="581587727">
+      <data key="d4">19.0644</data>
+      <data key="d5">-155.58476</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581606628">
+      <data key="d4">19.0632</data>
+      <data key="d5">-155.584513</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581606675">
+      <data key="d4">19.0346566</data>
+      <data key="d5">-155.659501</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581616879">
+      <data key="d4">19.06218</data>
+      <data key="d5">-155.58411</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581616914">
+      <data key="d4">19.05897</data>
+      <data key="d5">-155.5814</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581623268">
+      <data key="d4">19.06238</data>
+      <data key="d5">-155.58422</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581650383">
+      <data key="d4">19.0648671</data>
+      <data key="d5">-155.5821707</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581666620">
+      <data key="d4">19.0635301</data>
+      <data key="d5">-155.6052194</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581666809">
+      <data key="d4">19.06065</data>
+      <data key="d5">-155.58188</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581675497">
+      <data key="d4">19.0680338</data>
+      <data key="d5">-155.6130072</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581681631">
+      <data key="d4">19.0638183</data>
+      <data key="d5">-155.5846459</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="581727585">
+      <data key="d4">19.0646798</data>
+      <data key="d5">-155.5897693</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="581782416">
+      <data key="d4">19.061508</data>
+      <data key="d5">-155.5820092</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581827205">
+      <data key="d4">19.0673179</data>
+      <data key="d5">-155.6115067</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581834091">
+      <data key="d4">19.06259</data>
+      <data key="d5">-155.5843571</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581863854">
+      <data key="d4">19.0648721</data>
+      <data key="d5">-155.5875619</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581864017">
+      <data key="d4">19.06268</data>
+      <data key="d5">-155.58109</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="581873744">
+      <data key="d4">19.06499</data>
+      <data key="d5">-155.58488</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="581880533">
+      <data key="d4">19.0618984</data>
+      <data key="d5">-155.5807098</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582114261">
+      <data key="d4">19.0592</data>
+      <data key="d5">-155.58061</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582118257">
+      <data key="d4">19.0643233</data>
+      <data key="d5">-155.5819165</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582131366">
+      <data key="d4">19.05929</data>
+      <data key="d5">-155.58025</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="582150289">
+      <data key="d4">19.061162</data>
+      <data key="d5">-155.5836664</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582153584">
+      <data key="d4">19.0650506</data>
+      <data key="d5">-155.6132178</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582165337">
+      <data key="d4">19.0631733</data>
+      <data key="d5">-155.5814188</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582190566">
+      <data key="d4">19.0673789</data>
+      <data key="d5">-155.6144724</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582259695">
+      <data key="d4">19.05959</data>
+      <data key="d5">-155.5861</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="582259704">
+      <data key="d4">19.0587038</data>
+      <data key="d5">-155.5830961</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="582259911">
+      <data key="d4">19.0637516</data>
+      <data key="d5">-155.5816747</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="582329831">
+      <data key="d4">19.12712</data>
+      <data key="d5">-155.52443</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="2251753755">
+      <data key="d4">19.0605981</data>
+      <data key="d5">-155.5863165</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="2251753842">
+      <data key="d4">19.066747</data>
+      <data key="d5">-155.612343</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2253620041">
+      <data key="d4">19.0592149</data>
+      <data key="d5">-155.6019052</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="2253620054">
+      <data key="d4">19.0610502</data>
+      <data key="d5">-155.6009337</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2253620099">
+      <data key="d4">19.0625692</data>
+      <data key="d5">-155.6399407</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4398497867">
+      <data key="d4">19.0484334</data>
+      <data key="d5">-155.6105349</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="6127567014">
+      <data key="d4">19.0621204</data>
+      <data key="d5">-155.5865193</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="6127567021">
+      <data key="d4">19.0614233</data>
+      <data key="d5">-155.5843896</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="6127571707">
+      <data key="d4">19.0616261</data>
+      <data key="d5">-155.5781615</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="6127571723">
+      <data key="d4">19.0626477</data>
+      <data key="d5">-155.5785128</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10610536030">
+      <data key="d4">19.0651849</data>
+      <data key="d5">-155.5819103</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="12651829921">
+      <data key="d4">19.0732628</data>
+      <data key="d5">-155.6310749</data>
+      <data key="d6">1</data>
+    </node>
+    <edge source="581587727" target="581650383" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">278.28433469000873</data>
+      <data key="d13">LINESTRING (-155.58476 19.0644, -155.58417 19.06454, -155.5837253 19.0646295, -155.5822694 19.06489, -155.582218 19.0648867, -155.5821707 19.0648671)</data>
+    </edge>
+    <edge source="581587727" target="581873744" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">66.95863301920306</data>
+      <data key="d13">LINESTRING (-155.58476 19.0644, -155.58487 19.06485, -155.58488 19.06499)</data>
+    </edge>
+    <edge source="581587727" target="581681631" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">65.88398670052874</data>
+      <data key="d13">LINESTRING (-155.58476 19.0644, -155.584655 19.063936, -155.5846459 19.0638183)</data>
+    </edge>
+    <edge source="581606628" target="581681631" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">70.156353319619</data>
+    </edge>
+    <edge source="581606628" target="581834091" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">69.8395419697446</data>
+      <data key="d13">LINESTRING (-155.584513 19.0632, -155.5843947 19.062695, -155.5843571 19.06259)</data>
+    </edge>
+    <edge source="581606628" target="582259911" id="0">
+      <data key="d7">45720074</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Lokelani Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">304.5575410262112</data>
+      <data key="d13">LINESTRING (-155.584513 19.0632, -155.58429 19.06325, -155.58238 19.0636073, -155.58178 19.06373, -155.5816747 19.0637516)</data>
+    </edge>
+    <edge source="581606675" target="582153584" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">6078.176849365748</data>
+      <data key="d13">LINESTRING (-155.659501 19.0346566, -155.6592713 19.0347466, -155.65537 19.03606, -155.64994 19.03788, -155.64981 19.03795, -155.64917 19.0384, -155.64786 19.03934, -155.64589 19.040799, -155.64558 19.04106, -155.64535 19.04129, -155.64519 19.04143, -155.64503 19.04155, -155.6434473 19.0425889, -155.6430905 19.0428314, -155.6420927 19.043599, -155.6418518 19.0437649, -155.6407302 19.0445259, -155.6406063 19.0446137, -155.6404859 19.0447113, -155.6391303 19.0458886, -155.6387238 19.046213, -155.63736 19.04725, -155.6365664 19.0478164, -155.6357855 19.0483454, -155.6353407 19.0486825, -155.6349185 19.0490446, -155.6344811 19.0494825, -155.6343221 19.0496277, -155.634153 19.0497625, -155.6339747 19.0498861, -155.6322978 19.0510075, -155.6321671 19.0510921, -155.632026 19.0511734, -155.6296105 19.0524639, -155.628788 19.0528659, -155.6283079 19.053089, -155.6280544 19.0532221, -155.6279149 19.053321, -155.6277325 19.0534782, -155.62676 19.05436, -155.62609 19.05489, -155.62585 19.05507, -155.625528 19.055274, -155.62343 19.05651, -155.62275 19.05689, -155.62248 19.05705, -155.62233 19.05715, -155.62223 19.05721, -155.62195 19.05744, -155.62134 19.05813, -155.62108 19.0584, -155.6209 19.05856, -155.620753 19.058651, -155.62066 19.05872, -155.62029 19.05894, -155.6201 19.05906, -155.61979 19.05921, -155.61939 19.05938, -155.61852 19.05966, -155.61755 19.05996, -155.6161803 19.0604912, -155.6151007 19.060912, -155.6150199 19.0609539, -155.6149445 19.061004, -155.6148755 19.0610617, -155.6148137 19.0611263, -155.6147599 19.061197, -155.6147147 19.0612729, -155.6146787 19.061353, -155.6146524 19.0614365, -155.6145827 19.0616444, -155.6143538 19.0622803, -155.614148 19.06286, -155.6138427 19.0637729, -155.6137301 19.0641101, -155.6136875 19.0642321, -155.6136332 19.0643499, -155.6135678 19.0644625, -155.6132178 19.0650506)</data>
+    </edge>
+    <edge source="581616879" target="581623268" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">25.06440690427527</data>
+    </edge>
+    <edge source="581616879" target="581864017" id="0">
+      <data key="d7">45711236</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Opukea Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">322.97676045443916</data>
+      <data key="d13">LINESTRING (-155.58411 19.06218, -155.58391 19.06221, -155.58357 19.06222, -155.58309 19.06228, -155.58131 19.06261, -155.5812 19.06264, -155.58109 19.06268)</data>
+    </edge>
+    <edge source="581616879" target="582150289" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">122.72370736803175</data>
+      <data key="d13">LINESTRING (-155.58411 19.06218, -155.58395 19.0619, -155.5838 19.06154, -155.5837 19.06126, -155.5836664 19.061162)</data>
+    </edge>
+    <edge source="581616914" target="581666809" id="0">
+      <data key="d7">45639369</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Niu Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">193.51030561693088</data>
+      <data key="d13">LINESTRING (-155.5814 19.05897, -155.58163 19.05974, -155.58188 19.06065)</data>
+    </edge>
+    <edge source="581616914" target="582259704" id="0">
+      <data key="d7">45711243</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Poha Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">182.3970299088306</data>
+      <data key="d13">LINESTRING (-155.5814 19.05897, -155.5818 19.05885, -155.58197 19.05881, -155.58264 19.058714, -155.5830375 19.0586799, -155.5830961 19.0587038)</data>
+    </edge>
+    <edge source="581616914" target="582114261" id="0">
+      <data key="d7">45711243</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Poha Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">86.93158986295663</data>
+      <data key="d13">LINESTRING (-155.5814 19.05897, -155.58067 19.05919, -155.58061 19.0592)</data>
+    </edge>
+    <edge source="581623268" target="581834091" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">27.438714277045296</data>
+    </edge>
+    <edge source="581623268" target="581616879" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">25.06440690427527</data>
+    </edge>
+    <edge source="581623268" target="581681631" id="0">
+      <data key="d7">[45621451, 45687222]</data>
+      <data key="d8">living_street</data>
+      <data key="d9">['Milo Road', 'Melia Street']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">298.38345211204097</data>
+      <data key="d13">LINESTRING (-155.58422 19.06238, -155.58433 19.06234, -155.58452 19.06232, -155.5848905 19.06231, -155.5849229 19.0623163, -155.5849615 19.0623363, -155.5849698 19.0623431, -155.5849908 19.0623673, -155.5850075 19.0624057, -155.5851624 19.0631083, -155.5852406 19.0634817, -155.5852656 19.0635856, -155.5852683 19.0636182, -155.585251 19.0636643, -155.5852045 19.0637002, -155.5851098 19.0637277, -155.58505 19.0637451, -155.58487 19.06378, -155.5846459 19.0638183)</data>
+    </edge>
+    <edge source="581650383" target="10610536030" id="0">
+      <data key="d7">1138261882</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">44.69575592777589</data>
+    </edge>
+    <edge source="581650383" target="582118257" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">66.54603921260065</data>
+      <data key="d13">LINESTRING (-155.5821707 19.0648671, -155.5821603 19.0648599, -155.5821143 19.0648017, -155.5819165 19.0643233)</data>
+    </edge>
+    <edge source="581650383" target="581587727" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">278.2843346900087</data>
+      <data key="d13">LINESTRING (-155.5821707 19.0648671, -155.582218 19.0648867, -155.5822694 19.06489, -155.5837253 19.0646295, -155.58417 19.06454, -155.58476 19.0644)</data>
+    </edge>
+    <edge source="581666620" target="4398497867" id="0">
+      <data key="d7">45720060</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaʻaluʻalu Waiohinu Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">1855.05342714606</data>
+      <data key="d13">LINESTRING (-155.6052194 19.0635301, -155.6052221 19.0630433, -155.6052207 19.0629617, -155.6052295 19.0628805, -155.6052483 19.0628008, -155.605277 19.0627238, -155.605315 19.0626505, -155.6053619 19.0625819, -155.605417 19.0625191, -155.6054796 19.0624628, -155.6066303 19.0615501, -155.6067255 19.0614561, -155.6068083 19.061352, -155.6068774 19.0612394, -155.6069319 19.0611198, -155.6069709 19.0609949, -155.6072175 19.0600917, -155.6074403 19.0593877, -155.60752 19.05889, -155.60755 19.05862, -155.60756 19.0584, -155.60753 19.05802, -155.607535 19.05781, -155.60754 19.05763, -155.60759 19.05737, -155.60764 19.05705, -155.60765 19.05687, -155.60765 19.05651, -155.6077 19.05611, -155.60779 19.05571, -155.60797 19.05511, -155.60805 19.05493, -155.60831 19.05454, -155.6084 19.05436, -155.60849 19.0542, -155.6086 19.0541, -155.60876 19.05398, -155.60938 19.05365, -155.60951 19.05356, -155.609545 19.053499, -155.60961 19.05339, -155.60975 19.05307, -155.61005 19.05242, -155.6101 19.05222, -155.610152 19.05193, -155.61018 19.05177, -155.61032 19.05122, -155.61037 19.0509, -155.61037 19.0507626, -155.61037 19.05072, -155.61036 19.05057, -155.61037 19.05023, -155.61042 19.0496, -155.61044 19.04953, -155.61047 19.04932, -155.6105349 19.0484334)</data>
+    </edge>
+    <edge source="581666620" target="581827205" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">784.8466773162115</data>
+      <data key="d13">LINESTRING (-155.6052194 19.0635301, -155.6062526 19.0640853, -155.6070273 19.0645012, -155.6076593 19.0648518, -155.609226 19.0658279, -155.6103209 19.0665099, -155.6112038 19.0670594, -155.6113184 19.0671353, -155.6113858 19.0671877, -155.6114469 19.0672467, -155.6115008 19.0673115, -155.6115067 19.0673179)</data>
+    </edge>
+    <edge source="581666620" target="2253620054" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">528.5359493919667</data>
+      <data key="d13">LINESTRING (-155.6052194 19.0635301, -155.6024912 19.0620194, -155.6019895 19.0617416, -155.60177 19.06162, -155.60158 19.06148, -155.6011576 19.0612008, -155.60099 19.06109, -155.6009337 19.0610502)</data>
+    </edge>
+    <edge source="581666809" target="581616914" id="0">
+      <data key="d7">45639369</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Niu Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">193.51030561693088</data>
+      <data key="d13">LINESTRING (-155.58188 19.06065, -155.58163 19.05974, -155.5814 19.05897)</data>
+    </edge>
+    <edge source="581666809" target="581782416" id="0">
+      <data key="d7">45639369</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Niu Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">97.2700922570929</data>
+      <data key="d13">LINESTRING (-155.58188 19.06065, -155.58189 19.06069, -155.58188 19.06077, -155.58189 19.06109, -155.581957 19.061338, -155.5820092 19.061508)</data>
+    </edge>
+    <edge source="581666809" target="582114261" id="0">
+      <data key="d7">45687221</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Maia Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">259.3037904475004</data>
+      <data key="d13">LINESTRING (-155.58188 19.06065, -155.58179 19.06069, -155.581426 19.06079, -155.58139 19.0608, -155.5813 19.06081, -155.58122 19.06077, -155.5811 19.0605, -155.58088 19.05991, -155.580775 19.059645, -155.58069 19.05943, -155.58061 19.0592)</data>
+    </edge>
+    <edge source="581675497" target="582190566" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">170.3351318442203</data>
+    </edge>
+    <edge source="581675497" target="2251753842" id="0">
+      <data key="d7">45699433</data>
+      <data key="d8">residential</data>
+      <data key="d9">Pinao Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">159.20461534304508</data>
+      <data key="d13">LINESTRING (-155.6130072 19.0680338, -155.6125969 19.0672391, -155.612343 19.066747)</data>
+    </edge>
+    <edge source="581675497" target="581827205" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">230.3716311344267</data>
+      <data key="d13">LINESTRING (-155.6130072 19.0680338, -155.6124692 19.0682796, -155.6123313 19.0683345, -155.612306 19.0683424, -155.6122799 19.0683476, -155.6122534 19.0683499, -155.6122268 19.0683492, -155.6122004 19.0683457, -155.6121747 19.0683393, -155.6121498 19.0683301, -155.6121263 19.0683183, -155.6121044 19.068304, -155.6120844 19.0682874, -155.6120665 19.0682688, -155.612051 19.0682483, -155.6119754 19.068118, -155.6115916 19.0674475, -155.6115494 19.0673771, -155.6115067 19.0673179)</data>
+    </edge>
+    <edge source="581681631" target="581606628" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">70.156353319619</data>
+    </edge>
+    <edge source="581681631" target="581623268" id="0">
+      <data key="d7">[45621451, 45687222]</data>
+      <data key="d8">living_street</data>
+      <data key="d9">['Milo Road', 'Melia Street']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">298.383452112041</data>
+      <data key="d13">LINESTRING (-155.5846459 19.0638183, -155.58487 19.06378, -155.58505 19.0637451, -155.5851098 19.0637277, -155.5852045 19.0637002, -155.585251 19.0636643, -155.5852683 19.0636182, -155.5852656 19.0635856, -155.5852406 19.0634817, -155.5851624 19.0631083, -155.5850075 19.0624057, -155.5849908 19.0623673, -155.5849698 19.0623431, -155.5849615 19.0623363, -155.5849229 19.0623163, -155.5848905 19.06231, -155.58452 19.06232, -155.58433 19.06234, -155.58422 19.06238)</data>
+    </edge>
+    <edge source="581681631" target="581587727" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">65.88398670052874</data>
+      <data key="d13">LINESTRING (-155.5846459 19.0638183, -155.584655 19.063936, -155.58476 19.0644)</data>
+    </edge>
+    <edge source="581681631" target="582118257" id="0">
+      <data key="d7">45720075</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Nahele Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">292.29724952770084</data>
+      <data key="d13">LINESTRING (-155.5846459 19.0638183, -155.58446 19.06385, -155.5819165 19.0643233)</data>
+    </edge>
+    <edge source="581727585" target="581863854" id="0">
+      <data key="d7">1138253584</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">234.33081102009592</data>
+      <data key="d13">LINESTRING (-155.5897693 19.0646798, -155.589574 19.064685, -155.589235 19.064694, -155.58914 19.0647, -155.58863 19.0647, -155.58814 19.06473, -155.587982 19.06475, -155.5877178 19.0648256, -155.5875619 19.0648721)</data>
+    </edge>
+    <edge source="581782416" target="581666809" id="0">
+      <data key="d7">45639369</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Niu Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">97.2700922570929</data>
+      <data key="d13">LINESTRING (-155.5820092 19.061508, -155.581957 19.061338, -155.58189 19.06109, -155.58188 19.06077, -155.58189 19.06069, -155.58188 19.06065)</data>
+    </edge>
+    <edge source="581782416" target="582150289" id="0">
+      <data key="d7">1137766581</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">178.36748855220003</data>
+      <data key="d13">LINESTRING (-155.5820092 19.061508, -155.5829359 19.0613145, -155.5836664 19.061162)</data>
+    </edge>
+    <edge source="581782416" target="581880533" id="0">
+      <data key="d7">1137888828</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">143.3329555048559</data>
+      <data key="d13">LINESTRING (-155.5820092 19.061508, -155.58159 19.06162, -155.5807098 19.0618984)</data>
+    </edge>
+    <edge source="581827205" target="2251753842" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">108.5547397780464</data>
+      <data key="d13">LINESTRING (-155.6115067 19.0673179, -155.6116313 19.0672463, -155.6121323 19.0668868, -155.6122228 19.066831, -155.612275 19.0668009, -155.6123231 19.0667654, -155.612343 19.066747)</data>
+    </edge>
+    <edge source="581827205" target="581675497" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">230.37163113442665</data>
+      <data key="d13">LINESTRING (-155.6115067 19.0673179, -155.6115494 19.0673771, -155.6115916 19.0674475, -155.6119754 19.068118, -155.612051 19.0682483, -155.6120665 19.0682688, -155.6120844 19.0682874, -155.6121044 19.068304, -155.6121263 19.0683183, -155.6121498 19.0683301, -155.6121747 19.0683393, -155.6122004 19.0683457, -155.6122268 19.0683492, -155.6122534 19.0683499, -155.6122799 19.0683476, -155.612306 19.0683424, -155.6123313 19.0683345, -155.6124692 19.0682796, -155.6130072 19.0680338)</data>
+    </edge>
+    <edge source="581827205" target="581666620" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">784.8466773162115</data>
+      <data key="d13">LINESTRING (-155.6115067 19.0673179, -155.6115008 19.0673115, -155.6114469 19.0672467, -155.6113858 19.0671877, -155.6113184 19.0671353, -155.6112038 19.0670594, -155.6103209 19.0665099, -155.609226 19.0658279, -155.6076593 19.0648518, -155.6070273 19.0645012, -155.6062526 19.0640853, -155.6052194 19.0635301)</data>
+    </edge>
+    <edge source="581834091" target="581623268" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">27.438714277045296</data>
+    </edge>
+    <edge source="581834091" target="582165337" id="0">
+      <data key="d7">45687223</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kilika Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">315.67787915600667</data>
+      <data key="d13">LINESTRING (-155.5843571 19.06259, -155.58431 19.0626067, -155.5842589 19.0626249, -155.5814188 19.0631733)</data>
+    </edge>
+    <edge source="581834091" target="581606628" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">69.8395419697446</data>
+      <data key="d13">LINESTRING (-155.5843571 19.06259, -155.5843947 19.062695, -155.584513 19.0632)</data>
+    </edge>
+    <edge source="581863854" target="6127567014" id="0">
+      <data key="d7">1138252322</data>
+      <data key="d8">unclassified</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaalaiki Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">331.991869222775</data>
+      <data key="d13">LINESTRING (-155.5875619 19.0648721, -155.5871841 19.0643265, -155.5869341 19.0639865, -155.5868141 19.0637665, -155.5867341 19.0635165, -155.5865641 19.0624565, -155.5865426 19.0622967, -155.5865193 19.0621204)</data>
+    </edge>
+    <edge source="581863854" target="581727585" id="0">
+      <data key="d7">1138253584</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">234.33081102009592</data>
+      <data key="d13">LINESTRING (-155.5875619 19.0648721, -155.5877178 19.0648256, -155.587982 19.06475, -155.58814 19.06473, -155.58863 19.0647, -155.58914 19.0647, -155.589235 19.064694, -155.589574 19.064685, -155.5897693 19.0646798)</data>
+    </edge>
+    <edge source="581864017" target="581880533" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">97.17175829573182</data>
+      <data key="d13">LINESTRING (-155.58109 19.06268, -155.5809357 19.062503, -155.5808495 19.0623479, -155.58076 19.06211, -155.5807098 19.0618984)</data>
+    </edge>
+    <edge source="581864017" target="582165337" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">65.18971453639763</data>
+      <data key="d13">LINESTRING (-155.58109 19.06268, -155.58133 19.062985, -155.5814188 19.0631733)</data>
+    </edge>
+    <edge source="581864017" target="581616879" id="0">
+      <data key="d7">45711236</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Opukea Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">322.9767604544392</data>
+      <data key="d13">LINESTRING (-155.58109 19.06268, -155.5812 19.06264, -155.58131 19.06261, -155.58309 19.06228, -155.58357 19.06222, -155.58391 19.06221, -155.58411 19.06218)</data>
+    </edge>
+    <edge source="581873744" target="581587727" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">66.95863301920306</data>
+      <data key="d13">LINESTRING (-155.58488 19.06499, -155.58487 19.06485, -155.58476 19.0644)</data>
+    </edge>
+    <edge source="581880533" target="581864017" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">97.17175829573182</data>
+      <data key="d13">LINESTRING (-155.5807098 19.0618984, -155.58076 19.06211, -155.5808495 19.0623479, -155.5809357 19.062503, -155.58109 19.06268)</data>
+    </edge>
+    <edge source="581880533" target="581782416" id="0">
+      <data key="d7">1137888828</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">143.3329555048559</data>
+      <data key="d13">LINESTRING (-155.5807098 19.0618984, -155.58159 19.06162, -155.5820092 19.061508)</data>
+    </edge>
+    <edge source="581880533" target="6127571723" id="0">
+      <data key="d7">[1137888828, 1138252319]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">245.47270257051923</data>
+      <data key="d13">LINESTRING (-155.5807098 19.0618984, -155.580621 19.0619279, -155.580587 19.0619392, -155.578837 19.062536, -155.5785128 19.0626477)</data>
+    </edge>
+    <edge source="582114261" target="582131366" id="0">
+      <data key="d7">45680116</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">39.17269951143618</data>
+      <data key="d13">LINESTRING (-155.58061 19.0592, -155.58038 19.05925, -155.58025 19.05929)</data>
+    </edge>
+    <edge source="582114261" target="581666809" id="0">
+      <data key="d7">45687221</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Maia Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">259.3037904475004</data>
+      <data key="d13">LINESTRING (-155.58061 19.0592, -155.58069 19.05943, -155.580775 19.059645, -155.58088 19.05991, -155.5811 19.0605, -155.58122 19.06077, -155.5813 19.06081, -155.58139 19.0608, -155.581426 19.06079, -155.58179 19.06069, -155.58188 19.06065)</data>
+    </edge>
+    <edge source="582114261" target="581616914" id="0">
+      <data key="d7">45711243</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Poha Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">86.93158986295663</data>
+      <data key="d13">LINESTRING (-155.58061 19.0592, -155.58067 19.05919, -155.5814 19.05897)</data>
+    </edge>
+    <edge source="582118257" target="582259911" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">68.46138069328074</data>
+    </edge>
+    <edge source="582118257" target="581650383" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">66.54603921260063</data>
+      <data key="d13">LINESTRING (-155.5819165 19.0643233, -155.5821143 19.0648017, -155.5821603 19.0648599, -155.5821707 19.0648671)</data>
+    </edge>
+    <edge source="582118257" target="581681631" id="0">
+      <data key="d7">45720075</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Nahele Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">292.29724952770084</data>
+      <data key="d13">LINESTRING (-155.5819165 19.0643233, -155.58446 19.06385, -155.5846459 19.0638183)</data>
+    </edge>
+    <edge source="582131366" target="582114261" id="0">
+      <data key="d7">45680116</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">39.17269951143618</data>
+      <data key="d13">LINESTRING (-155.58025 19.05929, -155.58038 19.05925, -155.58061 19.0592)</data>
+    </edge>
+    <edge source="582150289" target="581616879" id="0">
+      <data key="d7">45718382</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kukui Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">122.72370736803177</data>
+      <data key="d13">LINESTRING (-155.5836664 19.061162, -155.5837 19.06126, -155.5838 19.06154, -155.58395 19.0619, -155.58411 19.06218)</data>
+    </edge>
+    <edge source="582150289" target="2251753755" id="0">
+      <data key="d7">1137766581</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">285.4937454880752</data>
+      <data key="d13">LINESTRING (-155.5836664 19.061162, -155.58397 19.0611, -155.5849177 19.0608972, -155.5853621 19.060802, -155.5856496 19.0607407, -155.5863165 19.0605981)</data>
+    </edge>
+    <edge source="582150289" target="581782416" id="0">
+      <data key="d7">1137766581</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">178.36748855220003</data>
+      <data key="d13">LINESTRING (-155.5836664 19.061162, -155.5829359 19.0613145, -155.5820092 19.061508)</data>
+    </edge>
+    <edge source="582153584" target="581606675" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">6078.176849365751</data>
+      <data key="d13">LINESTRING (-155.6132178 19.0650506, -155.6135678 19.0644625, -155.6136332 19.0643499, -155.6136875 19.0642321, -155.6137301 19.0641101, -155.6138427 19.0637729, -155.614148 19.06286, -155.6143538 19.0622803, -155.6145827 19.0616444, -155.6146524 19.0614365, -155.6146787 19.061353, -155.6147147 19.0612729, -155.6147599 19.061197, -155.6148137 19.0611263, -155.6148755 19.0610617, -155.6149445 19.061004, -155.6150199 19.0609539, -155.6151007 19.060912, -155.6161803 19.0604912, -155.61755 19.05996, -155.61852 19.05966, -155.61939 19.05938, -155.61979 19.05921, -155.6201 19.05906, -155.62029 19.05894, -155.62066 19.05872, -155.620753 19.058651, -155.6209 19.05856, -155.62108 19.0584, -155.62134 19.05813, -155.62195 19.05744, -155.62223 19.05721, -155.62233 19.05715, -155.62248 19.05705, -155.62275 19.05689, -155.62343 19.05651, -155.625528 19.055274, -155.62585 19.05507, -155.62609 19.05489, -155.62676 19.05436, -155.6277325 19.0534782, -155.6279149 19.053321, -155.6280544 19.0532221, -155.6283079 19.053089, -155.628788 19.0528659, -155.6296105 19.0524639, -155.632026 19.0511734, -155.6321671 19.0510921, -155.6322978 19.0510075, -155.6339747 19.0498861, -155.634153 19.0497625, -155.6343221 19.0496277, -155.6344811 19.0494825, -155.6349185 19.0490446, -155.6353407 19.0486825, -155.6357855 19.0483454, -155.6365664 19.0478164, -155.63736 19.04725, -155.6387238 19.046213, -155.6391303 19.0458886, -155.6404859 19.0447113, -155.6406063 19.0446137, -155.6407302 19.0445259, -155.6418518 19.0437649, -155.6420927 19.043599, -155.6430905 19.0428314, -155.6434473 19.0425889, -155.64503 19.04155, -155.64519 19.04143, -155.64535 19.04129, -155.64558 19.04106, -155.64589 19.040799, -155.64786 19.03934, -155.64917 19.0384, -155.64981 19.03795, -155.64994 19.03788, -155.65537 19.03606, -155.6592713 19.0347466, -155.659501 19.0346566)</data>
+    </edge>
+    <edge source="582153584" target="2251753842" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">210.32020184449843</data>
+      <data key="d13">LINESTRING (-155.6132178 19.0650506, -155.6126947 19.0661477, -155.6124964 19.066516, -155.6124381 19.0666314, -155.6124052 19.0666801, -155.6123668 19.0667249, -155.612343 19.066747)</data>
+    </edge>
+    <edge source="582153584" target="582190566" id="0">
+      <data key="d7">45711233</data>
+      <data key="d8">residential</data>
+      <data key="d9">Kono Hiki Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">290.8256990239774</data>
+      <data key="d13">LINESTRING (-155.6132178 19.0650506, -155.6133103 19.0651641, -155.6144724 19.0673789)</data>
+    </edge>
+    <edge source="582165337" target="582259911" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">69.70166444007717</data>
+    </edge>
+    <edge source="582165337" target="581864017" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">65.18971453639763</data>
+      <data key="d13">LINESTRING (-155.5814188 19.0631733, -155.58133 19.062985, -155.58109 19.06268)</data>
+    </edge>
+    <edge source="582165337" target="581834091" id="0">
+      <data key="d7">45687223</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Kilika Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">315.6778791560067</data>
+      <data key="d13">LINESTRING (-155.5814188 19.0631733, -155.5842589 19.0626249, -155.58431 19.0626067, -155.5843571 19.06259)</data>
+    </edge>
+    <edge source="582190566" target="581675497" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">170.3351318442203</data>
+    </edge>
+    <edge source="582190566" target="582153584" id="0">
+      <data key="d7">45711233</data>
+      <data key="d8">residential</data>
+      <data key="d9">Kono Hiki Street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">290.8256990239774</data>
+      <data key="d13">LINESTRING (-155.6144724 19.0673789, -155.6133103 19.0651641, -155.6132178 19.0650506)</data>
+    </edge>
+    <edge source="582190566" target="2253620099" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3260.76690684223</data>
+      <data key="d13">LINESTRING (-155.6144724 19.0673789, -155.6151582 19.0670836, -155.6151951 19.0670708, -155.6152334 19.0670622, -155.6152725 19.0670582, -155.6153118 19.0670586, -155.6153508 19.0670635, -155.6153889 19.0670728, -155.6153922 19.067074, -155.6154255 19.0670864, -155.6154602 19.067104, -155.6154923 19.0671255, -155.6155214 19.0671505, -155.6155471 19.0671786, -155.6156839 19.0673878, -155.6157219 19.0674511, -155.6157524 19.067518, -155.6157752 19.0675875, -155.6157899 19.067659, -155.6158341 19.0679455, -155.6158426 19.0679943, -155.6158573 19.0680417, -155.6158779 19.0680872, -155.6159042 19.0681299, -155.6159358 19.0681694, -155.6159722 19.0682049, -155.6160129 19.068236, -155.6160573 19.0682622, -155.6161047 19.0682832, -155.6161544 19.0682986, -155.6162057 19.0683081, -155.6162579 19.0683118, -155.6166662 19.0683303, -155.6174059 19.0683638, -155.6175624 19.0683722, -155.6177184 19.0683866, -155.6181556 19.0684322, -155.6182383 19.0684375, -155.6183211 19.068434, -155.6184029 19.0684218, -155.6184829 19.068401, -155.6185598 19.0683718, -155.6185912 19.0683559, -155.6186328 19.0683347, -155.6187009 19.0682901, -155.6187634 19.0682386, -155.6188193 19.0681807, -155.618868 19.0681174, -155.6189089 19.0680492, -155.6189415 19.0679772, -155.6192486 19.0669986, -155.6192807 19.0669039, -155.619321 19.066811, -155.6193706 19.0667274, -155.6194323 19.0666501, -155.6195074 19.0665727, -155.6195932 19.0665094, -155.6196817 19.0664549, -155.6201922 19.0662552, -155.6203187 19.0661858, -155.6204312 19.0660973, -155.6205265 19.0659924, -155.6205668 19.0659346, -155.6207968 19.0655218, -155.6208746 19.065423, -155.6209682 19.0653374, -155.6210754 19.0652673, -155.6211931 19.0652146, -155.621975 19.0649959, -155.6221769 19.0649252, -155.6222722 19.0648776, -155.6225725 19.0646884, -155.6226523 19.064646, -155.6227442 19.0646124, -155.6228477 19.0645879, -155.6232237 19.0645512, -155.6233598 19.0645212, -155.6234254 19.0644986, -155.6235498 19.0644386, -155.6236078 19.0644017, -155.6253547 19.062832, -155.6255016 19.0627228, -155.6256574 19.0626254, -155.6258213 19.0625404, -155.6281948 19.0614631, -155.6283218 19.061427, -155.6284512 19.0614002, -155.6285825 19.0613827, -155.6287147 19.0613746, -155.6288473 19.0613761, -155.6289793 19.0613871, -155.6311793 19.061773, -155.6313568 19.0617765, -155.6314452 19.0617679, -155.6316183 19.0617305, -155.6317826 19.061667, -155.6319338 19.061579, -155.6323705 19.0612331, -155.6338272 19.0600815, -155.6339442 19.0600187, -155.6340706 19.059975, -155.6342029 19.0599515, -155.6343374 19.059949, -155.6344706 19.0599675, -155.6366011 19.0605791, -155.6367399 19.0606416, -155.6368671 19.0607233, -155.6369796 19.0608223, -155.6384093 19.0622585, -155.6385339 19.0623478, -155.6386018 19.0623847, -155.6387461 19.0624417, -155.6388985 19.062475, -155.6398787 19.062568, -155.6399407 19.0625692)</data>
+    </edge>
+    <edge source="582259695" target="2251753755" id="0">
+      <data key="d7">1274546821</data>
+      <data key="d8">unclassified</data>
+      <data key="d9">Naalehu Spur Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">114.60830653596668</data>
+      <data key="d13">LINESTRING (-155.5861 19.05959, -155.58616 19.05976, -155.5861788 19.0598494, -155.5862 19.05995, -155.58623 19.060077, -155.58624 19.06012, -155.5863013 19.0604792, -155.5863165 19.0605981)</data>
+    </edge>
+    <edge source="582259704" target="581616914" id="0">
+      <data key="d7">45711243</data>
+      <data key="d8">living_street</data>
+      <data key="d14">2</data>
+      <data key="d9">Poha Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">182.3970299088306</data>
+      <data key="d13">LINESTRING (-155.5830961 19.0587038, -155.5830375 19.0586799, -155.58264 19.058714, -155.58197 19.05881, -155.5818 19.05885, -155.5814 19.05897)</data>
+    </edge>
+    <edge source="582259911" target="582165337" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">69.70166444007717</data>
+    </edge>
+    <edge source="582259911" target="582118257" id="0">
+      <data key="d7">45621431</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Ohai Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">68.46138069328074</data>
+    </edge>
+    <edge source="582259911" target="581606628" id="0">
+      <data key="d7">45720074</data>
+      <data key="d8">living_street</data>
+      <data key="d9">Lokelani Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">304.5575410262112</data>
+      <data key="d13">LINESTRING (-155.5816747 19.0637516, -155.58178 19.06373, -155.58238 19.0636073, -155.58429 19.06325, -155.584513 19.0632)</data>
+    </edge>
+    <edge source="582329831" target="6127571723" id="0">
+      <data key="d7">[1138252321, 216242053, 1030753944, 1030753945, 45713245, 1138252319]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9422.69083442949</data>
+      <data key="d16">yes</data>
+      <data key="d13">LINESTRING (-155.52443 19.12712, -155.52447 19.12704, -155.5245229 19.1269545, -155.5258444 19.1248184, -155.5260707 19.124457, -155.5316612 19.115466, -155.5334932 19.1125174, -155.5389482 19.1037362, -155.5395956 19.102695, -155.5485542 19.0906083, -155.5491151 19.0898516, -155.549601 19.089196, -155.54973 19.08902, -155.55027 19.08835, -155.550983 19.087494, -155.55107 19.08739, -155.55148 19.08693, -155.55171 19.08664, -155.55184 19.0865, -155.55198 19.08641, -155.5522 19.08628, -155.55252 19.0861, -155.55269 19.08596, -155.55309 19.08559, -155.55339 19.08526, -155.55352 19.08506, -155.55359 19.08489, -155.55365 19.08473, -155.5537 19.08455, -155.55376 19.08406, -155.55384 19.08366, -155.55391 19.08346, -155.55406 19.08318, -155.55423 19.082819, -155.55424 19.0828, -155.55446 19.08238, -155.55462 19.08211, -155.55481 19.08188, -155.55499 19.08162, -155.55518 19.08128, -155.555248 19.081134, -155.55531 19.081, -155.5554 19.08075, -155.5555017 19.0804315, -155.5555991 19.080086, -155.5557298 19.0795898, -155.5559727 19.0788841, -155.5562353 19.0782863, -155.5562582 19.0782342, -155.5564561 19.0777792, -155.5565817 19.0775299, -155.5566205 19.0774528, -155.556867 19.076966, -155.5569 19.07691, -155.55709 19.0766, -155.55733 19.07626, -155.55771 19.07579, -155.55808 19.07531, -155.55856 19.07476, -155.55897 19.07425, -155.55929 19.0739, -155.56016 19.07315, -155.56041 19.073, -155.56063 19.07288, -155.56086 19.07278, -155.56167 19.07247, -155.56207 19.0723, -155.56225 19.0722, -155.56253 19.07203, -155.56366 19.07128, -155.56418 19.07095, -155.565 19.0704, -155.56519 19.07026, -155.56609 19.06949, -155.56633 19.06927, -155.566729 19.0689263, -155.56698 19.06871, -155.5670297 19.068665, -155.567137 19.068568, -155.56755 19.0682, -155.570417 19.065505, -155.57069 19.06532, -155.57099 19.06514, -155.571387 19.0649614, -155.57159 19.06487, -155.5728064 19.0643683, -155.5735711 19.0640951, -155.5739168 19.0639899, -155.5743427 19.0638605, -155.57441 19.06384, -155.57561 19.06348, -155.57775 19.06288, -155.57839 19.06269, -155.5785128 19.0626477)</data>
+    </edge>
+    <edge source="2251753755" target="582150289" id="0">
+      <data key="d7">1137766581</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">285.4937454880752</data>
+      <data key="d13">LINESTRING (-155.5863165 19.0605981, -155.5856496 19.0607407, -155.5853621 19.060802, -155.5849177 19.0608972, -155.58397 19.0611, -155.5836664 19.061162)</data>
+    </edge>
+    <edge source="2251753755" target="2253620054" id="0">
+      <data key="d7">[1138252316, 1138252318, 1138253583]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">1569.0286509594537</data>
+      <data key="d13">LINESTRING (-155.5863165 19.0605981, -155.586639 19.060543, -155.5866905 19.0605323, -155.5868962 19.0604867, -155.5872168 19.0604156, -155.5874205 19.0603758, -155.5874577 19.0603683, -155.5875428 19.0603509, -155.5878818 19.0602826, -155.58795 19.06027, -155.5884153 19.0601785, -155.5885293 19.0601561, -155.5889795 19.0601073, -155.5898023 19.0601093, -155.589944 19.0601096, -155.59835 19.06013, -155.59896 19.06015, -155.59935 19.0602, -155.59952 19.06024, -155.59975 19.06032, -155.60002 19.06043, -155.60041 19.06068, -155.6008273 19.060975, -155.6009337 19.0610502)</data>
+    </edge>
+    <edge source="2251753755" target="6127567014" id="0">
+      <data key="d7">1138252322</data>
+      <data key="d8">unclassified</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaalaiki Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">170.608874173157</data>
+      <data key="d13">LINESTRING (-155.5863165 19.0605981, -155.586403 19.0612471, -155.5864465 19.0615748, -155.5865193 19.0621204)</data>
+    </edge>
+    <edge source="2251753755" target="582259695" id="0">
+      <data key="d7">1274546821</data>
+      <data key="d8">unclassified</data>
+      <data key="d9">Naalehu Spur Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">114.60830653596666</data>
+      <data key="d13">LINESTRING (-155.5863165 19.0605981, -155.5863013 19.0604792, -155.58624 19.06012, -155.58623 19.060077, -155.5862 19.05995, -155.5861788 19.0598494, -155.58616 19.05976, -155.5861 19.05959)</data>
+    </edge>
+    <edge source="2251753842" target="582153584" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">210.32020184449846</data>
+      <data key="d13">LINESTRING (-155.612343 19.066747, -155.6123668 19.0667249, -155.6124052 19.0666801, -155.6124381 19.0666314, -155.6124964 19.066516, -155.6126947 19.0661477, -155.6132178 19.0650506)</data>
+    </edge>
+    <edge source="2251753842" target="581827205" id="0">
+      <data key="d7">45639472</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kamaoa Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">108.55473977804638</data>
+      <data key="d13">LINESTRING (-155.612343 19.066747, -155.6123231 19.0667654, -155.612275 19.0668009, -155.6122228 19.066831, -155.6121323 19.0668868, -155.6116313 19.0672463, -155.6115067 19.0673179)</data>
+    </edge>
+    <edge source="2251753842" target="581675497" id="0">
+      <data key="d7">45699433</data>
+      <data key="d8">residential</data>
+      <data key="d9">Pinao Street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">159.20461534304508</data>
+      <data key="d13">LINESTRING (-155.612343 19.066747, -155.6125969 19.0672391, -155.6130072 19.0680338)</data>
+    </edge>
+    <edge source="2253620041" target="2253620054" id="0">
+      <data key="d7">1138253581</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">257.6617770446076</data>
+      <data key="d13">LINESTRING (-155.6019052 19.0592149, -155.60189 19.05929, -155.60187 19.05939, -155.60185 19.05957, -155.60186 19.05976, -155.60188 19.05991, -155.60189 19.06028, -155.60187 19.06034, -155.60178 19.06041, -155.60166 19.06049, -155.60149 19.06053, -155.60129 19.06059, -155.60117 19.06073, -155.60102 19.06094, -155.6009337 19.0610502)</data>
+    </edge>
+    <edge source="2253620054" target="581666620" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">528.5359493919667</data>
+      <data key="d13">LINESTRING (-155.6009337 19.0610502, -155.60099 19.06109, -155.6011576 19.0612008, -155.60158 19.06148, -155.60177 19.06162, -155.6019895 19.0617416, -155.6024912 19.0620194, -155.6052194 19.0635301)</data>
+    </edge>
+    <edge source="2253620054" target="2253620041" id="0">
+      <data key="d7">1138253581</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">257.6617770446076</data>
+      <data key="d13">LINESTRING (-155.6009337 19.0610502, -155.60102 19.06094, -155.60117 19.06073, -155.60129 19.06059, -155.60149 19.06053, -155.60166 19.06049, -155.60178 19.06041, -155.60187 19.06034, -155.60189 19.06028, -155.60188 19.05991, -155.60186 19.05976, -155.60185 19.05957, -155.60187 19.05939, -155.60189 19.05929, -155.6019052 19.0592149)</data>
+    </edge>
+    <edge source="2253620054" target="2251753755" id="0">
+      <data key="d7">[1138252316, 1138252318, 1138253583]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">1569.0286509594537</data>
+      <data key="d13">LINESTRING (-155.6009337 19.0610502, -155.6008273 19.060975, -155.60041 19.06068, -155.60002 19.06043, -155.59975 19.06032, -155.59952 19.06024, -155.59935 19.0602, -155.59896 19.06015, -155.59835 19.06013, -155.589944 19.0601096, -155.5898023 19.0601093, -155.5889795 19.0601073, -155.5885293 19.0601561, -155.5884153 19.0601785, -155.58795 19.06027, -155.5878818 19.0602826, -155.5875428 19.0603509, -155.5874577 19.0603683, -155.5874205 19.0603758, -155.5872168 19.0604156, -155.5868962 19.0604867, -155.5866905 19.0605323, -155.586639 19.060543, -155.5863165 19.0605981)</data>
+    </edge>
+    <edge source="2253620099" target="582190566" id="0">
+      <data key="d7">215707679</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3260.7669068422288</data>
+      <data key="d13">LINESTRING (-155.6399407 19.0625692, -155.6398787 19.062568, -155.6388985 19.062475, -155.6387461 19.0624417, -155.6386018 19.0623847, -155.6385339 19.0623478, -155.6384093 19.0622585, -155.6369796 19.0608223, -155.6368671 19.0607233, -155.6367399 19.0606416, -155.6366011 19.0605791, -155.6344706 19.0599675, -155.6343374 19.059949, -155.6342029 19.0599515, -155.6340706 19.059975, -155.6339442 19.0600187, -155.6338272 19.0600815, -155.6323705 19.0612331, -155.6319338 19.061579, -155.6317826 19.061667, -155.6316183 19.0617305, -155.6314452 19.0617679, -155.6313568 19.0617765, -155.6311793 19.061773, -155.6289793 19.0613871, -155.6288473 19.0613761, -155.6287147 19.0613746, -155.6285825 19.0613827, -155.6284512 19.0614002, -155.6283218 19.061427, -155.6281948 19.0614631, -155.6258213 19.0625404, -155.6256574 19.0626254, -155.6255016 19.0627228, -155.6253547 19.062832, -155.6236078 19.0644017, -155.6235498 19.0644386, -155.6234254 19.0644986, -155.6233598 19.0645212, -155.6232237 19.0645512, -155.6228477 19.0645879, -155.6227442 19.0646124, -155.6226523 19.064646, -155.6225725 19.0646884, -155.6222722 19.0648776, -155.6221769 19.0649252, -155.621975 19.0649959, -155.6211931 19.0652146, -155.6210754 19.0652673, -155.6209682 19.0653374, -155.6208746 19.065423, -155.6207968 19.0655218, -155.6205668 19.0659346, -155.6205265 19.0659924, -155.6204312 19.0660973, -155.6203187 19.0661858, -155.6201922 19.0662552, -155.6196817 19.0664549, -155.6195932 19.0665094, -155.6195074 19.0665727, -155.6194323 19.0666501, -155.6193706 19.0667274, -155.619321 19.066811, -155.6192807 19.0669039, -155.6192486 19.0669986, -155.6189415 19.0679772, -155.6189089 19.0680492, -155.618868 19.0681174, -155.6188193 19.0681807, -155.6187634 19.0682386, -155.6187009 19.0682901, -155.6186328 19.0683347, -155.6185912 19.0683559, -155.6185598 19.0683718, -155.6184829 19.068401, -155.6184029 19.0684218, -155.6183211 19.068434, -155.6182383 19.0684375, -155.6181556 19.0684322, -155.6177184 19.0683866, -155.6175624 19.0683722, -155.6174059 19.0683638, -155.6166662 19.0683303, -155.6162579 19.0683118, -155.6162057 19.0683081, -155.6161544 19.0682986, -155.6161047 19.0682832, -155.6160573 19.0682622, -155.6160129 19.068236, -155.6159722 19.0682049, -155.6159358 19.0681694, -155.6159042 19.0681299, -155.6158779 19.0680872, -155.6158573 19.0680417, -155.6158426 19.0679943, -155.6158341 19.0679455, -155.6157899 19.067659, -155.6157752 19.0675875, -155.6157524 19.067518, -155.6157219 19.0674511, -155.6156839 19.0673878, -155.6155471 19.0671786, -155.6155214 19.0671505, -155.6154923 19.0671255, -155.6154602 19.067104, -155.6154255 19.0670864, -155.6153922 19.067074, -155.6153889 19.0670728, -155.6153508 19.0670635, -155.6153118 19.0670586, -155.6152725 19.0670582, -155.6152334 19.0670622, -155.6151951 19.0670708, -155.6151582 19.0670836, -155.6144724 19.0673789)</data>
+    </edge>
+    <edge source="2253620099" target="12651829921" id="0">
+      <data key="d7">[422631840, 45711315]</data>
+      <data key="d8">unclassified</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">1609.1985773562876</data>
+      <data key="d14">2</data>
+      <data key="d9">Kiolaka'a Rd</data>
+      <data key="d13">LINESTRING (-155.6399407 19.0625692, -155.639929 19.0627168, -155.639746 19.0632926, -155.6395576 19.0639163, -155.6393551 19.0645428, -155.6391237 19.0652875, -155.6388714 19.0660192, -155.638647 19.0667844, -155.63859 19.0669, -155.63852 19.06699, -155.6359548 19.0699104, -155.6357848 19.0700104, -155.6356548 19.0700604, -155.63467 19.07031, -155.63424 19.07048, -155.6334 19.07094, -155.632503 19.0716204, -155.6321446 19.0723719, -155.6319083 19.0728651, -155.6318189 19.0730322, -155.6317599 19.0730803, -155.631701 19.0731379, -155.6316115 19.0731725, -155.6314571 19.0732071, -155.6311684 19.0732455, -155.6310749 19.0732628)</data>
+    </edge>
+    <edge source="4398497867" target="581666620" id="0">
+      <data key="d7">45720060</data>
+      <data key="d8">tertiary</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaʻaluʻalu Waiohinu Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">1855.0534271460601</data>
+      <data key="d13">LINESTRING (-155.6105349 19.0484334, -155.61047 19.04932, -155.61044 19.04953, -155.61042 19.0496, -155.61037 19.05023, -155.61036 19.05057, -155.61037 19.05072, -155.61037 19.0507626, -155.61037 19.0509, -155.61032 19.05122, -155.61018 19.05177, -155.610152 19.05193, -155.6101 19.05222, -155.61005 19.05242, -155.60975 19.05307, -155.60961 19.05339, -155.609545 19.053499, -155.60951 19.05356, -155.60938 19.05365, -155.60876 19.05398, -155.6086 19.0541, -155.60849 19.0542, -155.6084 19.05436, -155.60831 19.05454, -155.60805 19.05493, -155.60797 19.05511, -155.60779 19.05571, -155.6077 19.05611, -155.60765 19.05651, -155.60765 19.05687, -155.60764 19.05705, -155.60759 19.05737, -155.60754 19.05763, -155.607535 19.05781, -155.60753 19.05802, -155.60756 19.0584, -155.60755 19.05862, -155.60752 19.05889, -155.6074403 19.0593877, -155.6072175 19.0600917, -155.6069709 19.0609949, -155.6069319 19.0611198, -155.6068774 19.0612394, -155.6068083 19.061352, -155.6067255 19.0614561, -155.6066303 19.0615501, -155.6054796 19.0624628, -155.605417 19.0625191, -155.6053619 19.0625819, -155.605315 19.0626505, -155.605277 19.0627238, -155.6052483 19.0628008, -155.6052295 19.0628805, -155.6052207 19.0629617, -155.6052221 19.0630433, -155.6052194 19.0635301)</data>
+    </edge>
+    <edge source="6127567014" target="6127567021" id="0">
+      <data key="d7">653862135</data>
+      <data key="d8">living_street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">273.11336368711216</data>
+      <data key="d13">LINESTRING (-155.5865193 19.0621204, -155.5852563 19.062281, -155.5852075 19.0622653, -155.5844352 19.0616616, -155.5843762 19.0615779, -155.5843896 19.0614233)</data>
+    </edge>
+    <edge source="6127567014" target="581863854" id="0">
+      <data key="d7">1138252322</data>
+      <data key="d8">unclassified</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaalaiki Road</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">331.991869222775</data>
+      <data key="d13">LINESTRING (-155.5865193 19.0621204, -155.5865426 19.0622967, -155.5865641 19.0624565, -155.5867341 19.0635165, -155.5868141 19.0637665, -155.5869341 19.0639865, -155.5871841 19.0643265, -155.5875619 19.0648721)</data>
+    </edge>
+    <edge source="6127567014" target="2251753755" id="0">
+      <data key="d7">1138252322</data>
+      <data key="d8">unclassified</data>
+      <data key="d14">2</data>
+      <data key="d9">Kaalaiki Road</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">170.608874173157</data>
+      <data key="d13">LINESTRING (-155.5865193 19.0621204, -155.5864465 19.0615748, -155.586403 19.0612471, -155.5863165 19.0605981)</data>
+    </edge>
+    <edge source="6127567021" target="6127567014" id="0">
+      <data key="d7">653862135</data>
+      <data key="d8">living_street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">273.11336368711216</data>
+      <data key="d13">LINESTRING (-155.5843896 19.0614233, -155.5843762 19.0615779, -155.5844352 19.0616616, -155.5852075 19.0622653, -155.5852563 19.062281, -155.5865193 19.0621204)</data>
+    </edge>
+    <edge source="6127571707" target="6127571723" id="0">
+      <data key="d7">653862758</data>
+      <data key="d8">living_street</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">119.44623098569114</data>
+    </edge>
+    <edge source="6127571723" target="6127571707" id="0">
+      <data key="d7">653862758</data>
+      <data key="d8">living_street</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">119.44623098569114</data>
+    </edge>
+    <edge source="6127571723" target="581880533" id="0">
+      <data key="d7">[1137888828, 1138252319]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">245.47270257051923</data>
+      <data key="d13">LINESTRING (-155.5785128 19.0626477, -155.578837 19.062536, -155.580587 19.0619392, -155.580621 19.0619279, -155.5807098 19.0618984)</data>
+    </edge>
+    <edge source="6127571723" target="582329831" id="0">
+      <data key="d7">[1138252321, 216242053, 1030753944, 1030753945, 45713245, 1138252319]</data>
+      <data key="d8">primary</data>
+      <data key="d14">2</data>
+      <data key="d9">Mamalahoa Highway</data>
+      <data key="d15">HI 11</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9422.69083442949</data>
+      <data key="d16">yes</data>
+      <data key="d13">LINESTRING (-155.5785128 19.0626477, -155.57839 19.06269, -155.57775 19.06288, -155.57561 19.06348, -155.57441 19.06384, -155.5743427 19.0638605, -155.5739168 19.0639899, -155.5735711 19.0640951, -155.5728064 19.0643683, -155.57159 19.06487, -155.571387 19.0649614, -155.57099 19.06514, -155.57069 19.06532, -155.570417 19.065505, -155.56755 19.0682, -155.567137 19.068568, -155.5670297 19.068665, -155.56698 19.06871, -155.566729 19.0689263, -155.56633 19.06927, -155.56609 19.06949, -155.56519 19.07026, -155.565 19.0704, -155.56418 19.07095, -155.56366 19.07128, -155.56253 19.07203, -155.56225 19.0722, -155.56207 19.0723, -155.56167 19.07247, -155.56086 19.07278, -155.56063 19.07288, -155.56041 19.073, -155.56016 19.07315, -155.55929 19.0739, -155.55897 19.07425, -155.55856 19.07476, -155.55808 19.07531, -155.55771 19.07579, -155.55733 19.07626, -155.55709 19.0766, -155.5569 19.07691, -155.556867 19.076966, -155.5566205 19.0774528, -155.5565817 19.0775299, -155.5564561 19.0777792, -155.5562582 19.0782342, -155.5562353 19.0782863, -155.5559727 19.0788841, -155.5557298 19.0795898, -155.5555991 19.080086, -155.5555017 19.0804315, -155.5554 19.08075, -155.55531 19.081, -155.555248 19.081134, -155.55518 19.08128, -155.55499 19.08162, -155.55481 19.08188, -155.55462 19.08211, -155.55446 19.08238, -155.55424 19.0828, -155.55423 19.082819, -155.55406 19.08318, -155.55391 19.08346, -155.55384 19.08366, -155.55376 19.08406, -155.5537 19.08455, -155.55365 19.08473, -155.55359 19.08489, -155.55352 19.08506, -155.55339 19.08526, -155.55309 19.08559, -155.55269 19.08596, -155.55252 19.0861, -155.5522 19.08628, -155.55198 19.08641, -155.55184 19.0865, -155.55171 19.08664, -155.55148 19.08693, -155.55107 19.08739, -155.550983 19.087494, -155.55027 19.08835, -155.54973 19.08902, -155.549601 19.089196, -155.5491151 19.0898516, -155.5485542 19.0906083, -155.5395956 19.102695, -155.5389482 19.1037362, -155.5334932 19.1125174, -155.5316612 19.115466, -155.5260707 19.124457, -155.5258444 19.1248184, -155.5245229 19.1269545, -155.52447 19.12704, -155.52443 19.12712)</data>
+    </edge>
+    <edge source="10610536030" target="581650383" id="0">
+      <data key="d7">1138261882</data>
+      <data key="d8">residential</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">44.69575592777589</data>
+    </edge>
+    <edge source="12651829921" target="2253620099" id="0">
+      <data key="d7">[422631840, 45711315]</data>
+      <data key="d8">unclassified</data>
+      <data key="d14">2</data>
+      <data key="d9">Kiolaka'a Rd</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">1609.1985773562874</data>
+      <data key="d13">LINESTRING (-155.6310749 19.0732628, -155.6311684 19.0732455, -155.6314571 19.0732071, -155.6316115 19.0731725, -155.631701 19.0731379, -155.6317599 19.0730803, -155.6318189 19.0730322, -155.6319083 19.0728651, -155.6321446 19.0723719, -155.632503 19.0716204, -155.6334 19.07094, -155.63424 19.07048, -155.63467 19.07031, -155.6356548 19.0700604, -155.6357848 19.0700104, -155.6359548 19.0699104, -155.63852 19.06699, -155.63859 19.0669, -155.638647 19.0667844, -155.6388714 19.0660192, -155.6391237 19.0652875, -155.6393551 19.0645428, -155.6395576 19.0639163, -155.639746 19.0632926, -155.639929 19.0627168, -155.6399407 19.0625692)</data>
+    </edge>
+    <data key="d0">2026-07-13 16:35:42</data>
+    <data key="d1">OSMnx 2.1.0</data>
+    <data key="d2">epsg:4326</data>
+    <data key="d3">True</data>
+  </graph>
+</graphml>
