@@ -1,4 +1,4 @@
-# Waiʻanae Digital Hubs Analysis
+# Validating Hawaii's Hybrid Broadband Strategy
 
-**Project Definition:**
-An analysis of spatial accessibility to community resources in the Waiʻanae region of Hawai'i to identify potential gaps in digital infrastructure and connectivity.
+# This project uses geospatial data analytics and statistical simulation to validate the geospatial efficiency of Hawaii’s finalized 82/18 fiber/satellite BEAD deployment strategy.
+
