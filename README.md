@@ -38,8 +38,8 @@ pip install -r requirements.txt
 Run notebooks in this order:
 1. `notebooks/data_processing.ipynb` — pulls road networks, computes 
    dist_to_backbone, terrain_score, density for all four clusters
-2. `notebooks/cost_model.ipynb` — builds the FiberCost formula and 
-   runs the baseline fiber/satellite comparison
+2. `notebooks/cost_model.ipynb` — builds the Fiber Cost formula and 
+   runs the baseline fiber/satellite comparison(to be uploaded)
 3. `notebooks/analysis.ipynb` — generates all figures/maps in `results/`
 
-   Still editing...
+   Still editing...I shall organize this mess
