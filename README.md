@@ -26,12 +26,20 @@ Download the following source files before running `notebooks/data_processing.ip
    - n22w159
    
    Place all `.tif` files directly into `data/raw/`.
-   
-   **Note:** these files are large (~300MB each). Browser downloads can silently truncate; 
-   using `wget -c <url>` (resume-capable) is recommended over a browser tab.
 
 ## Environment Setup
 
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+## Reproducing this analysis
+
+Run notebooks in this order:
+1. `notebooks/data_processing.ipynb` — pulls road networks, computes 
+   dist_to_backbone, terrain_score, density for all four clusters
+2. `notebooks/cost_model.ipynb` — builds the FiberCost formula and 
+   runs the baseline fiber/satellite comparison
+3. `notebooks/analysis.ipynb` — generates all figures/maps in `results/`
+
+   Still editing...
