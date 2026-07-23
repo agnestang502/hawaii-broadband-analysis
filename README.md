@@ -1,6 +1,6 @@
 # Testing Hawaii's Hybrid Broadband Strategy
 
-This project uses geospatial data analytics and Monte Carlo simulation to test the cost-efficiency and robustness of Hawaii's 82/18 fiber/satellite BEAD deployment strategy, researching how sensitive the split is to changes in construction and satellite service costs.
+This project uses geospatial data analytics and Monte Carlo simulation to test the robustness of Hawaii's 82/18 fiber/satellite BEAD deployment strategy, researching how sensitive the split is to changes in construction and satellite service costs.
 
 ## Data Setup
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ## Reproducing this analysis
 
 Run notebooks in this order:
-1. `notebooks/data_processing.ipynb` — pulls road networks, computes 
+1. `notebooks/data_processing.ipynb` — pulls road networks, and computes 
    dist_to_backbone, terrain_score, density for all four clusters
 2. `notebooks/cost_model.ipynb` — builds the Fiber Cost formula and 
    runs the baseline fiber/satellite comparison(to be uploaded)
