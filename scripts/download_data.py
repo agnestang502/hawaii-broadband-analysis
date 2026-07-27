@@ -25,13 +25,6 @@ def download_census():
     response = requests.get(url)
     open("data/raw/census/tl_2021_15_bg.zip","wb").write(response.content)
     print("Census data downloaded")
-
-#5-year ACS housing unit estimates (Table B25001) for Hawaii
-def download_acs():
-    url = "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25001.dat"
-    response = requests.get(url)
-    open("data/raw/acs_data/housing.dat", "wb").write(response.content)
-    print("Housing data downloaded")
     
 #USGS 3DEP Elevation data
 def download_dem():
@@ -41,9 +34,7 @@ def download_dem():
         "n22w158",
         "n22w159"
     ]
-
     base_url = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/{tile}/USGS_13_{tile}.tif"
-
     for tile in tiles:
         url = base_url.format(tile=tile)
 
@@ -65,7 +56,6 @@ def download_cai():
 
 def main():
     download_census()
-    download_acs()
     download_cai()
     download_dem()
     print("All data downloaded")

@@ -1,2 +1,11 @@
-cache/
+data/raw/*
+!data/raw/acs_data/
+!data/raw/acs_data/housing.csv
+
+waianae-hubs-venv/
 .ipynb_checkpoints/
+*.tif
+*.zip
+*.gpkg
+*.graphml
+
