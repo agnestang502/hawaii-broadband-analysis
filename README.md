@@ -5,15 +5,16 @@ This project evaluates the robustness of Hawaii's 82/18 fiber/satellite BEAD dep
 ```text
 .
 ├── data/
-│   ├── raw/
-│   └── processed/
+│ ├── raw/
+│ └── processed/
 ├── docs/
 ├── notebooks/
-│   ├── 01_data_processing.ipynb
-│   ├── 02_cost_model.ipynb
-│   └── 03_analysis.ipynb
+│ ├── data_processing.ipynb
+│ ├── cost_model.ipynb
+│ └── analysis.ipynb
+├── scripts/
+│ └── download_data.py
 ├── results/
-├── src/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -24,13 +25,19 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-## Data 
+## Data
 This analysis requires:
-- 2021 TIGER/Line Shapefiles for Hawaii 
-- 5-year ACS housing unit estimates (Table B25001) 
-- Hawaii BEAD Community Anchor Instituion dataset
+- 2021 TIGER/Line Shapefiles for Hawaii
+- 5-year ACS housing unit estimates (Table B25001)
+- Hawaii BEAD Community Anchor Institution dataset
 - USGS 3DEP elevation data
-   
+
+ACS housing data is included in:
+`data/raw/acs_data/housing.csv`
+Other raw datasets can be downloaded automatically using:
+```bash
+python scripts/download_data.py
+
 ## Reproducing this analysis
 Run notebooks in this order:
 1. `notebooks/01_data_processing.ipynb`
