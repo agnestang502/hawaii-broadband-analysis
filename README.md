@@ -37,7 +37,7 @@ ACS housing data is included in:
 Other raw datasets can be downloaded automatically using:
 ```bash
 python scripts/download_data.py
-
+```
 ## Reproducing this analysis
 Run notebooks in this order:
 1. `notebooks/01_data_processing.ipynb`
