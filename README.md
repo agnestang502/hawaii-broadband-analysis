@@ -1,7 +1,7 @@
 # Testing Hawaii's Hybrid Broadband Strategy
 This project evaluates the robustness of Hawaii's 82/18 fiber/satellite BEAD deployment strategy, researching how sensitive the split is to changes in construction, housing density, and satellite service costs.
 
-## Repository Structure.
+## Repository Structure
 ```text
 .
 ├── data/
