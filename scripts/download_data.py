@@ -28,16 +28,14 @@ def download_census():
     
 #USGS 3DEP Elevation data
 def download_dem():
-    tiles = [
-        "n20w156",
-        "n22w157",
-        "n22w158",
-        "n22w159"
-    ]
-    base_url = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/{tile}/USGS_13_{tile}.tif"
-    for tile in tiles:
-        url = base_url.format(tile=tile)
-
+    dem_urls = {
+    "n20w156": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n20w156/USGS_13_n20w156_20250611.tif",
+    "n22w157": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n22w157/USGS_13_n22w157_20250611.tif",
+    "n22w158": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n22w158/USGS_13_n22w158_20250611.tif",
+    "n22w159": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n22w159/USGS_13_n22w159_20250611.tif",
+}
+    for tile, url in dem_urls.items():
+        print(f"downloading {tile}...")
         response = requests.get(url, stream=True)
 
         with open(f"data/raw/elevation/USGS_13_{tile}.tif", "wb") as f:
