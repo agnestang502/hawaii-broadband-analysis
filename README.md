@@ -1,5 +1,10 @@
 # Testing Hawaii's Hybrid Broadband Strategy
-This project evaluates the robustness of Hawaii's 82/18 fiber/satellite BEAD deployment strategy, researching how sensitive the split is to changes in construction, housing density, and satellite service costs.
+This project evaluates the robustness of Hawaii's 82/18 fiber/satellite BEAD deployment strategy.
+## Research Question
+How sensitive is Hawaii's optimal fiber/satellite broadband deployment strategy to changes in:
+- fiber construction costs
+- housing density assumptions
+- satellite service costs
 
 ## Repository Structure
 ```text
@@ -18,6 +23,12 @@ This project evaluates the robustness of Hawaii's 82/18 fiber/satellite BEAD dep
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+```
+## Quick Start
+Clone the repository:
+```bash
+git clone https://github.com/agnestang502/hawaii-broadband-analysis.git
+cd hawaii-broadband-analysis
 ```
 ## Environment Setup
 ```bash
@@ -40,9 +51,9 @@ python scripts/download_data.py
 ```
 ## Reproducing this analysis
 Run notebooks in this order:
-1. `notebooks/01_data_processing.ipynb`
-2. `notebooks/02_cost_model.ipynb`
-3. `notebooks/03_analysis.ipynb`
+1. `notebooks/data_processing.ipynb`
+2. `notebooks/cost_model.ipynb`
+3. `notebooks/analysis.ipynb`
    
 ## Methodology
 The model estmates fiber deployment costs using:
