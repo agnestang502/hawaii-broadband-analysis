@@ -1,1 +1,249 @@
+\documentclass[conference]{IEEEtran}
 
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Robustness Analysis of Hawaii's BEAD Technology Allocation Using a Publicly Reproducible Geospatial Cost Model}
+\author{Agnes Tang and Bucky Hayes}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Broadband technology allocation is an essential component of the Broadband Equity, Access, and Deployment (BEAD) program. Given the sensitivity of infrastructure decisions to construction costs, terrain, and technology assumptions, evaluating the robustness of these decisions contributes to effective long-term broadband planning. This paper presents a transparent, publicly reproducible geospatial cost model to test the robustness of Hawaii's fiber-to-the-premises (FTTP) and low-Earth-orbit (LEO) satellite technology allocation. Using representative geographic clusters, the study estimates lifecycle deployment costs for each technology and performs a scenario-based robustness analysis across researched economic parameters. This model does not attempt to replicate Hawaii's proprietary engineering models, but rather tries to identify where technology allocations remain stable and where they become sensitive to changing assumptions. 
+\end{abstract}
+
+\section{Introduction}
+\subsection{The BEAD Program}
+The Federal Communications Commission(FCC)'s Broadband Data Collection reported, as of December 2022, that approximately 24 million Americans, out of a population of roughly 300 million, did not have access to fixed terrestrial broadband service. Among them, 28\% lived in rural areas, while more than 23\% lived on Tribal lands. To address this issue, the Broadband Equity, Access, and Deployment(BEAD) Program was implemented in 2022, granting \$42.45 billion to fund partnerships between states or territories, communities, and stakeholders to build broadband infrastructure where it is needed and increase adoption of high-speed internet. High-speed internet is measured by a minimum download speed of 100 megabits per second and an upload speed of 20 megabits per second.
+
+It is crucial for the construction of high-speed internet infrastructure to be subsidized through BEAD. Expanding access to high-speed internet is often linked to many economic benefits, including attracting business, increasing incomes, and expanding opportunities for education and telemedicine. It is also linked to improvement in government services, entertainment, environmental sustainability. \cite{MOST2022broadband}.
+Two of the main internet infrastructure deployment methods currently are wired infrastructure, primarily fiber optic cables, and wireless infrastructure, which includes satellite internet and cellular networks.
+
+\subsection{Fiber Optic Network}
+The National Telecommunications and Information Administration identified fiber as the preferred long-term broadband technology because it can support increasing demand over time without requiring replacement of the physical cable. Fiber networks also provide the high-capacity connections needed to support technologies such as 5g networks.\cite{NTIA2022BEAD_NOFO}
+However, deploying fiber is also expensive and costs can increase due to regional factors such as longer distances to existing infrastructure, lower population density, and more difficult terrain. These factors create an economic boundary in remote areas where traditional fiber infrastructure becomes financially unfeasible, making alternative technologies, such as satellite service, necessary. This brings me to my research question.
+
+\subsection{Hawaii Case Study}
+
+We chose Hawaii as our case study because it contains a wide range of broadband deployment environments within a relatively small geographic area. This will allow us to better evaluate when fiber remains more cost-effective than satellite broadband.
+
+
+\section{Related Work}
+
+1. Tarana wireless study
+This study gathers financial data from past broadband projects to map how fiber deployment costs increase as neighborhoods become less dense, specifically categorizing the United States into density classes, and then uses a statistical trendline across the entire country to project fiber costs.
+
+2. California State Broadband Cost Model (CBCM)
+This model generates a static baseline cost for physical materials, and then adds multipliers such as terrain and excavation cost parameters. Our study implements a simplified version of this.
+
+3. State Broadband Cost Model
+This is a cost model that maps location points along real street networks to find the most efficient path for laying fiber cables. It determines the cheapest layout to group houses together, builds a physical bill of materials, and then converts those quantities into capital investments and long-term operating costs.
+\section{Methodology}
+
+\subsection{Overview of the Modeling Framework}
+This study proposes a framework to determine when fiber deployment becomes inefficient relative to LEO satellite broadband, while also identifying a density threshold for fiber viability.
+The overall workflow is as follows:
+\begin{itemize}
+\item Identify representative Hawaiian deployment environments.
+\item Extract geospatial and socioeconomic features.
+\item Estimate fiber lifecycle cost.
+\item Compare against satellite lifecycle cost.
+\item Determine crossover density.
+\item Evaluate uncertainty using Monte Carlo simulation.
+\end{itemize}
+
+Instead of assuming fiber is always optimal, this model identifies where infrastructure economics change.
+
+\subsection{Representative Deployment Environment Classification}
+Broadband economics are spatially heterogeneous, where factors such as population density, terrain complexity and the distance to backbone infrastructure may lead to cost variations. [1]
+This study uses representative clustering because a full statewide modeling requires extensive infrastructure-level data unavailable to the public, whereas representative environments allow for a reproducible comparison between fiber cost robustness of different deployment regions.
+We’ve identified four geographic regions of Hawai'i of varying density levels: Urban Honolulu, Suburban Mililani, Rural Wai'anae, and Remote Ocean View. 
+
+\begin{table}[htbp]
+\centering
+\caption{Characteristics of Representative Deployment Environments in Hawaii}
+\label{tab:deployment_environments}
+
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{p{0.22\columnwidth} p{0.70\columnwidth}}
+
+\hline
+\textbf{Environment} & \textbf{Key Characteristics} \\ 
+\hline
+
+Urban Honolulu & Highest housing density; existing infrastructure availability; short network extensions; lower construction uncertainty \\ 
+\hline
+
+Suburban Mililani & Residential development pattern; moderate density; mixed deployment conditions \\ 
+\hline
+
+Rural Wai'anae & Lower density; longer extensions; greater deployment difficulty \\ 
+\hline
+
+Remote Ocean View & Extremely sparse housing; high infrastructure sharing burden; candidate environment for satellite substitution \\ 
+\hline
+
+\end{tabular}
+}
+
+\end{table}
+
+
+\subsection{Geospatial Data Acquisition and Processing }
+
+\subsubsection{Network Distance Estimation}
+Distance to existing infrastructure is one of the primary drivers of fiber deployment cost, because extending fiber over longer distances inevitably requires more construction and materials. However, detailed maps of existing fiber backbone infrastructure are not publicly available, so we pivoted to using Community Anchor Institutions(CAI), as proxies for existing broadband infrastructure. CAIs include facilities such as schools, libraries, hospitals, and government buildings that are typically connected to high-capacity broadband networks. Using the python package OSMnx, I calculated network distance from road-network nodes to the nearest CAI.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.50\textwidth]{cai_distance_map.png}
+\caption{Spatial Distribution of Distance to CAI Proxy Across Four Representative Clusters}
+\label{fig:CAI_Proxy}
+\end{figure}
+
+$$D_i = \text{Network distance from } \text{cluster}_i \text{ to access point}$$
+
+\subsubsection{Housing Density Estimation}
+Fiber deployment requires a large capital investment  to construct the physical network itself including fiber lines and supporting infrastructure. These costs are mostly fixed once construction begins, meaning they must be distributed across the households that the network serves.In dense communities, the same fiber infrastructure can serve many households, reducing the capital investment per household,
+We used housing density as a proxy for potential connections available to share the cost of fiber infrastructure. To estimate housing density, we used ACS housing data to estimate how many households are located within each area and then divided it by land area to calculate housing density, measured as households per square kilometer.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.50\textwidth]{housing_density_log_map.png}
+\caption{Spatial Distribution of Housing Density Across Four Representative Clusters}
+\label{fig:housing_density}
+\end{figure}
+\subsubsection{Terrain and Deployment}
+Steeper terrain increases deployment difficulty because fiber construction may require more complex routing, additional equipment, and higher construction effort. To represent terrain complexity, I used elevation data from the U.S. Geological Survey to estimate how steep the roads are within each deployment environment. 
+Because fiber is typically installed alongside existing roads, steeper roads generally require more difficult and costly construction. For each cluster, we summarized road steepness using the 75th percentile and converted those values into terrain multipliers used in the cost model.
+\subsubsection {Fixed Paraneters}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sensitivity Analysis Input and Control Parameters}
+\label{tab:sensitivity_params}
+\vspace{2mm}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Parameter & Baseline & Sensitivity Range \\
+\midrule
+Fiber construction cost  & \$42,000/mile     & \$20,000--\$80,000/mile \\
+Drop cost                & \$1,200/HH        & \$800--\$2,000/HH       \\
+Terrain multiplier       & Cluster-specific  & $\pm20\%$               \\
+Deployment multiplier    & Cluster-specific  & $\pm20\%$               \\
+Satellite lifecycle cost & \$7,800/HH        & Fixed                   \\
+Analysis period          & 10 years          & Fixed                   \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+\subsection{Fiber Lifecycle Cost Model}
+\[
+C_{\text{fiber,HH}}
+=
+\left(
+\frac{C_{\text{infrastructure}}}{N_{\text{HH}}}
++
+C_{\text{drop}}
+\right)
+\left(1+r_{\text{maintenance}}T\right)
+\]
+This is a simplified cost model that estimates fiber cost per household. This study estimated infrastructure cost based on distance, construction cost, terrain, and deployment conditions. Because this infrastructure serves multiple households, We divided the cost by housing density to estimate cost per household, then added a fixed drop cost which represents the final connection from the network to each home. This was then converted into a 10-year lifecycle cost by applying annual maintenance costs, which would allow us to compare fiber and satellite on a consistent long-term cost basis.
+
+
+
+
+\subsection{Satellite Cost Benchmark}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Results: Baseline Comparison}
+\label{tab:cluster_comparison}
+\vspace{2mm}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Cluster & Density ($hh/\text{km}^2$) & CAPEX/HH & Lifecycle/HH & Tech \\
+\midrule
+Urban Honolulu     & 2,248.88 & \$1,291.71  & \$1,550.05  & Fiber     \\
+Suburban Mililani  & 979.78   & \$1,377.98  & \$1,653.58  & Fiber     \\
+Rural Waiʻanae     & 567.74   & \$1,555.61  & \$1,866.73  & Fiber     \\
+Remote Ocean View  & 22.90    & \$17,258.12 & \$20,709.75 & Satellite \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+The table shows that in dense areas such as Urban Honolulu, the initial infrastructure investment can be distributed across many households, resulting in relatively low CAPEX and lifecycle costs per household. 
+In contrast, Remote Ocean View has a much higher CAPEX per household because the infrastructure cost is divided among far fewer potential connections, and this higher initial cost carries into the lifecycle estimate
+Ultimately, this confirms the concept that dense environments support fiber deployment, while extremely low-density regions favor satellite alternatives.
+
+\subsection{Crossover Density Determination}
+To identify the economic boundary between fiber and satellite, I solved for the housing density where the estimated fiber lifecycle cost equals the satellite lifecycle benchmark, also known as crossover density, as shown in my table. This crossover density represents the minimum density required for fiber to remain economically competitive under the baseline assumptions. 
+\begin{table}[htbp]
+\centering
+\small
+\caption{Crossover Density by Cluster}
+\label{tab:crossover_density}
+\begin{tabular}{lc}
+\toprule
+\textbf{Cluster} & \textbf{Crossover Density} \\
+\midrule
+Urban Honolulu     & 38.91 \\
+Suburban Mililani  & 32.90 \\
+Rural Waianae     & 38.09 \\
+Remote Ocean View  & 69.38 \\
+\bottomrule
+\end{tabular}
+\end{table}
+We then conducted a sensitivity analysis first and decided to vary construction cost first, reran the cost model for each scenario, and measured how the fiber-satellite crossover density shifted.
+
+The main purpose of this analysis is to compare how sensitive different environments are to cost uncertainty, because construction costs increase, all environments require higher housing densities for fiber to remain competitive.
+ 
+Remote, low density areas Ocean View exhibits the greatest sensitivity, meaning its fiber viability is possibly more affected by uncertainty in construction costs.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.50\textwidth]{construction_sensitivity.png}
+\caption{Construction Cost Sensitivity Analysis}
+\label{fig:monte_carlo}
+\end{figure}
+
+\subsection{Monte Carlo Uncertainty Analysis}
+To evaluate uncertainty in the model results, we performed a Monte Carlo simulation by randomly sampling the uncertain parameters, including fiber construction cost, drop cost, terrain multipliers, and deployment multipliers, within their defined ranges that I’ve researched. For each simulation, the model recalculated the density threshold where fiber and satellite had equal estimated cost. The boxplot summarizes the distribution of these crossover densities across 10000 simulations for each deployment environment. Remote Ocean View shows a higher and wider distribution because its low housing density makes fiber viability more sensitive to cost changes. In contrast, denser environments have lower and more stable crossover thresholds.
+
+\subsection{Output}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.50\textwidth]{monte_carlo_boxplot.png}
+\caption{Monte Carlo Uncertainty Analysis of Crossover Densities}
+\label{fig:monte_carlo}
+\end{figure}
+\section{Results}
+\section{Discussion}
+The results depend a lot on the assumptions and publicly available data used. Because detailed fiber backbone maps and engineering design data are not publicly available. While this provides a reproducible approximation, it doesn’t necessarily represent actual network connection points.
+Additionally, the analysis uses four representative clusters rather than modeling every community in Hawaii. This captures a range of deployment environments but cannot account for all local geographic variation. 
+Finally, the cost model, is intentionally simplified and does not include factors such as labor availability, property acquisition, or existing utility infrastructure, all of which influence actual deployment decisions.
+
+\section{Data and Code Availability}
+
+All data sources used in this study are publicly available. Housing unit counts and land area measurements are pulled from the U.S. Census Bureau’s American Community Survey at the census block group level. Elevation data are obtained from the U.S. Geological Survey. Road network geometry is sourced from OpenStreetMap and processed using the Python package OSMnx. Community Anchor Institution locations are compiled from publicly available federal and state datasets.
+
+The code implementing the geospatial processing, cost modeling, and Monte Carlo simulation is stored in a public Github repository to facilitate reproducibility by other researchers. The repository includes a python script for data acquisition, jupyter notebooks for feature engineering, cost estimation, and sensitivity analysis, along with documentation describing the required Python packages and execution steps.
+
+\section{Conclusion}
+In this study, we developed a reproducible geospatial cost model to compare the economic viability of fiber and satellite broadband across representative deployment environments in Hawaii. 
+
+The model identified crossover density thresholds where fiber becomes more cost-effective than satellite and evaluated how those thresholds change under uncertain cost assumptions through sensitivity and Monte Carlo analysis. 
+
+Overall, the results suggest that while fiber remains economically justified in denser environments, deployment decisions in low populated regions are a lot more sensitive to geographic and cost uncertainty. (Still editing draft)
+
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
