@@ -1,1 +1,425 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
 
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+
+
+\title{Robustness Analysis of Hawaii's BEAD Technology Allocation}
+\subtitle{A Publicly Reproducible Geospatial Cost Model}
+
+\author{Agnes Tang}
+\institute{Institute for Computing in Research}
+
+\date{2026}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Defining Broadband}
+    \begin{block}{The BEAD (Broadband Equity, Access, and Deployment) Program}
+        \small A program to get all Americans online by funding partnerships between states or territories, communities, and stakeholders to build infrastructure where we need it and increase adoption of high-speed Internet~\cite{broadbandusa2022_bead}.
+    \end{block}
+    \begin{block}{Broadband}
+        \small A wide bandwidth which can transport multiple signals over a ``broad'' range of frequencies and support different internet traffic types, allowing multiple data streams to be sent at once~\cite{broadbandusa2022}.
+    \end{block}
+    \vspace{0.3em}
+    \begin{itemize}
+        \item 24 million Americans do not have access to terrestrial broadband service.
+        \item Expanding connectivity is linked to economic benefits.
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{The Rural Broadband Cost Problem}
+\begin{itemize}
+    \item Wired vs. Wireless Infrastructure
+    \item Fiber is prioritized, but deployment costs are dependent on:
+    \begin{itemize}
+        \item Distance from existing infrastructure
+        \item Difficult terrain
+        \item Low subscriber density
+    \end{itemize}
+    \item Remote areas create an economic boundary where alternatives may become favorable.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Research Question}
+    \begin{itemize}
+        \item How do geographic and cost uncertainties affect the economic threshold for fiber deployment in Hawaii?
+        \item Hawaii exhibits significant terrain and population density variation.
+        \item Communities are geographically dispersed across island environments.
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Methodology \& Data Sources}
+    \begin{columns}[T]
+        \column{0.45\textwidth}
+        \textbf{Core Data Inputs:}
+        \begin{itemize}
+            \small
+            \item ACS housing unit estimates
+            \item TIGER/Line geographic data
+            \item Hawaii BEAD Community Anchor Institution dataset
+            \item USGS elevation data
+        \end{itemize}    
+        \vspace{0.5em}
+        \begin{figure}
+            \centering
+        \end{figure}
+
+        \column{0.55\textwidth}
+        \centering
+        \begin{tikzpicture}[
+            node distance=0.25cm,
+            every node/.style={font=\tiny},
+            process/.style={
+                rectangle, 
+                rounded corners=2pt, 
+                draw=blue!50!black, 
+                fill=blue!5, 
+                thick, 
+                text width=5.5cm, 
+                align=center, 
+                minimum height=0.45cm
+            },
+            arrow/.style={-{Stealth[length=1.5mm]}, thick, blue!50!black}
+        ]
+            \node (p1) [process] {Pulling Datasets};
+            \node (p2) [process, below=of p1] {Geospatial Data Processing};
+            \node (p3) [process, below=of p2] {Representative Cluster Characterization};
+            \node (p4) [process, below=of p3] {Fiber Lifecycle Cost Model};
+            \node (p5) [process, below=of p4] {Satellite Cost Benchmark};
+            \node (p6) [process, below=of p5] {Crossover Density Calculation};
+            \node (p7) [process, below=of p6] {Monte Carlo Uncertainty Analysis};
+            
+            \draw [arrow] (p1) -- (p2);
+            \draw [arrow] (p2) -- (p3);
+            \draw [arrow] (p3) -- (p4);
+            \draw [arrow] (p4) -- (p5);
+            \draw [arrow] (p5) -- (p6);
+            \draw [arrow] (p6) -- (p7);
+        \end{tikzpicture}
+    \end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Representative Geographic Clusters}
+\begin{columns}
+\column{0.45\textwidth}
+\begin{table}
+\centering
+\small
+\begin{tabular}{cc}
+\toprule
+Environment & Example Cluster\\
+\midrule
+Urban & Honolulu\\
+Suburban & Mililani\\
+Rural & Waiʻanae\\
+Remote & Ocean View\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.3cm}
+\begin{itemize}
+    \small
+    \item Four environments represent different deployment conditions.
+\end{itemize}
+
+\column{0.55\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\linewidth]{figures/cluster_map.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Distance to Community Anchor Institutions}
+\begin{columns}[T]
+\column{0.48\textwidth}
+\centering
+\begin{tikzpicture}[
+    node distance=0.25cm,
+    every node/.style={font=\tiny},
+    process/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=blue!50!black,
+        fill=blue!5,
+        thick,
+        text width=3.4cm,
+        align=center,
+        minimum height=0.4cm
+    },
+    arrow/.style={-Stealth, thick, blue!50!black}
+]
+
+\node (global) [process] {Global Internet};
+\node (first) [process, below=of global] {First Mile: Transpacific Submarine Fiber};
+\node (landing) [process, below=of first] {Cable Landing Stations};
+\node (middle) [process, below=of landing] {Middle Mile: Fiber Backbone};
+\node (cais) [process, below=of middle, fill=gray!10] {Community Anchor Institutions (Schools, Libraries, Hospitals)};
+\node (last) [process, below=of cais] {Last Mile: Local Distribution};
+\node (homes) [process, below=of last, fill=green!5] {Homes \& Businesses};
+
+\draw[arrow] (global)--(first);
+\draw[arrow] (first)--(landing);
+\draw[arrow] (landing)--(middle);
+\draw[arrow] (middle)--(cais);
+\draw[arrow] (cais)--(last);
+\draw[arrow] (last)--(homes);
+\end{tikzpicture}
+
+\column{0.52\textwidth}
+\centering
+\includegraphics[width=0.85\linewidth]{figures/cai_distance_map.png}
+
+\vspace{0.1cm}
+\begin{itemize}
+    \tiny
+    \item CAIs serve as proxies for locations with existing broadband connectivity.
+    \item Network distance acts as a proxy for required fiber extension.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Housing Density}
+\vspace{-0.3em}
+\begin{figure}
+\centering
+\includegraphics[width=0.48\linewidth]{figures/housing_density_map.png}
+\end{figure}
+\vspace{-0.5em}
+\begin{itemize}
+    \small
+    \item Fiber costs must be distributed across potential subscribers.
+    \item Low-density regions experience significantly higher cost per household.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Terrain Complexity Across Environments}
+\begin{itemize}
+    \item Road slope is utilized as a proxy for terrain difficulty.
+    \item Complex terrain directly impacts construction complexity and overall deployment expenditures.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Fiber Cost Model}
+\small
+\textbf{Capital Expenditure (CAPEX) per Household}
+\[
+\text{CAPEX}=
+\frac{
+\text{Distance} \times \text{ConstructionCost} \times \text{Terrain} \times \text{Deployment}
+}{
+\text{HouseholdsServed}
+}
++ \text{DropCost}
+\]
+\textbf{Lifecycle Cost per Household}
+\[
+\text{Lifecycle Cost}
+=
+\text{CAPEX}
+\times
+\left(1+\text{Maintenance Rate}\times\text{Years}\right)
+\]
+
+\begin{itemize}
+    \item Key cost drivers: Distance, terrain multiplier, deployment multiplier, subscriber drop cost, and 10-year maintenance.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Baseline Model Assumptions}
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Baseline Value} \\
+\midrule
+Fiber construction cost & \$42{,}000 per mile \\
+Subscriber drop cost & \$1{,}200 per household \\
+Maintenance rate & 2\% per year \\
+Analysis period & 10 years \\
+Satellite lifecycle cost & \$7{,}800 per household \\
+Terrain multiplier & 1.0--1.5 (cluster-specific) \\
+Deployment multiplier & 1.0--1.3 (cluster-specific) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+\begin{frame}{Results: Baseline Comparison}
+\begin{table}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Cluster & Density ($hh/km^2$) & CAPEX/HH & Lifecycle/HH & Technology\\
+\midrule
+Urban Honolulu & 2248.88 & \$1291.71 & \$1550.05 & Fiber\\
+Suburban Mililani & 979.78 & \$1377.98 & \$1653.58 & Fiber\\
+Rural Waiʻanae & 567.74 & \$1555.61 & \$1866.73 & Fiber\\
+Remote Ocean View & 22.90 & \$17258.12 & \$20709.75 & Satellite\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{itemize}
+    \small
+    \item Dense urban/suburban environments strongly support fiber deployment.
+    \item Extremely low-density remote regions favor satellite alternatives.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Economic Crossover Between Fiber and Satellite}
+\begin{columns}[T]
+\column{0.55\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[height=5.2cm]{figures/cost_density_crossover.png}
+\end{figure}
+
+\column{0.45\textwidth}
+\centering
+\vspace{1cm}
+\begin{table}
+\small
+\begin{tabular}{lc}
+\toprule
+\textbf{Cluster} & \textbf{Crossover Density} \\
+\midrule
+Urban Honolulu & 38.91 \\
+Suburban Mililani & 32.90 \\
+Rural Waiʻanae & 38.09 \\
+Remote Ocean View & 69.38 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Sensitivity Analysis Parameter Ranges}
+\begin{table}
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+Parameter & Baseline & Range\\
+\midrule
+Fiber construction cost & \$42,000/mile & \$20k--\$80k/mile\\
+Drop cost & \$1,200/HH & \$800--\$2,000\\
+Terrain multiplier & Cluster-specific & $\pm20\%$\\
+Deployment multiplier & Cluster-specific & $\pm20\%$\\
+Satellite lifecycle & \$7,800/HH & Fixed\\
+Analysis period & 10 years & Fixed\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Results: Sensitivity Analysis}
+    \begin{columns}
+        \column{0.55\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{figures/construction_sensitivity.png}
+        \end{figure}
+        \column{0.45\textwidth}
+        \begin{itemize}
+            \small
+            \item Higher construction costs increase the density threshold required for viable fiber deployment.
+            \item Optimal technology boundaries shift significantly under uncertain assumptions.
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}{Monte Carlo Simulation}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+    \small
+    \item Randomly samples uncertain parameters across thousands of scenarios.
+    \item Evaluates robustness and threshold stability across environments.
+\end{itemize}
+\column{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figures/monte_carlo_boxplot.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Discussion and Limitations}
+\begin{itemize}
+    \item Results rely on publicly available baseline assumptions.
+    \item Representative clusters simplify fine-grained local geographic variation.
+    \item Model does not attempt to replicate Hawaii's proprietary state allocation model.
+    \item Provides an independent, reproducible framework for robustness evaluation.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Conclusion}
+\begin{itemize}
+    \item Developed a publicly reproducible geospatial broadband cost model.
+    \item Identified clear economic boundaries between fiber and satellite alternatives.
+    \item Evaluated the robustness of technology allocation under uncertainty.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Future Work}
+\begin{itemize}
+    \item Scale framework to a full statewide parcel-level model.
+    \item Benchmark outputs against completed Hawaii broadband infrastructure projects.
+    \item Test alternative hybrid wireless/wireline deployment strategies.
+    \item Refine cost multipliers with local contractor data.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thank you}
+\centering
+\Large Questions?
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+    \nocite{ltgovhawaii2023, ntia2025economics, fba2026rva, hawaii2025bead}
+    \bibliographystyle{plain}
+    \bibliography{sample}
+\end{frame}
+
+\end{document}
